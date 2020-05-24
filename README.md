@@ -7,6 +7,8 @@ Funcionalidades implementadas:
 
 - API para obtener datos de los items desde la página de emisión de LibreDTE.
 
+El plugin fue probado con PrestaShop 1.5.6.2
+
 Licencia
 --------
 
@@ -19,4 +21,4 @@ API
 
 URL items:
 
-    https://example.com/module/libredte/product?column=reference&product_id=
+    https://example.com/index.php?fc=module&module=libredte&controller=product&column=reference&product_id=CODIGO
