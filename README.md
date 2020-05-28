@@ -1,13 +1,23 @@
 Plugin LibreDTE para PrestaShop
 ===============================
 
-Este plugin permite integrar PrestaShop con la aplicación web de LibreDTE.
+Este plugin permite integrar PrestaShop con la
+[Aplicación Web de LibreDTE](https://libredte.cl).
 
 Funcionalidades implementadas:
 
+- Emisión de Boleta o Factura desde un pedido pagado de PrestaShop.
+- Se ingresa el enlace al PDF de la boleta o factura como nota en el documento del pedido en PrestaShop.
+- Permite activar un registro para poder hacer depuración de las llamadas a LibreDTE.
 - API para obtener datos de los items desde la página de emisión de LibreDTE.
 
-El plugin fue probado con PrestaShop 1.5.6.2
+![Configuración del Plugin en PrestaShop](https://i.imgur.com/nHfN8bS.png "Configuración del Plugin en PrestaShop")
+
+El plugin fue probado con PrestaShop 1.7.6.5
+
+Para que este plugin pueda ser usado se requiere una cuenta con
+[Servicio Plus](https://libredte.cl/ventas/dte-plus) activo en la
+[Versión Oficial de LibreDTE](https://libredte.cl).
 
 Licencia
 --------

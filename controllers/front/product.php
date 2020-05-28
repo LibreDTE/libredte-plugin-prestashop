@@ -33,7 +33,7 @@ class LibredteProductModuleFrontController extends ModuleFrontController
      * Acción que permite obtener los datos de un item (producto) para poder
      * consumir desde la aplicación web de LibreDTE
      * @author Esteban De La Fuente Rubio, DeLaF (esteban[at]sasco.cl)
-     * @version 2016-01-30
+     * @version 2020-05-27
      */
     public function init()
     {
@@ -65,10 +65,10 @@ class LibredteProductModuleFrontController extends ModuleFrontController
             $this->product = new Product($product_id, true, $this->context->language->id, $this->context->shop->id);
         }
         // si el objeto no existe error
-        if (!Validate::isLoadedObject($this->product) or !$this->product->active) {
+        if (empty($this->product) or !Validate::isLoadedObject($this->product) or !$this->product->active) {
             header('HTTP/1.1 404 Not Found');
             header('Status: 404 Not Found');
-            $item = 'Item solicitado fue encontrado o no está activo';
+            $item = 'Item solicitado no fue encontrado o no está activo';
         }
         // crear datos del item
         else {
